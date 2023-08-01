@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy: 
       matrix: 
-        appname: ${{ env.APP_NAME }}
+        appname: '${{ env.APP_NAME }}'
     steps:
       - run: echo "${{env.APP_NAME}}"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."

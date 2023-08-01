@@ -1,6 +1,8 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
+env: 
+  APP_NAME: '${{ vars.ENVIRONMENT }}-exclamation-point-backend-api-ecs-app'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

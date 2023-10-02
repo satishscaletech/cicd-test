@@ -4,7 +4,7 @@ on: [push]
 env: 
   APP_NAME: '${{ vars.ENVIRONMENT }}-exclamation-point-backend-api-ecs-app'
   ENVIRONMENT: ${{ github.ref_name == 'main' && 'prod' || 'dev' }}
-  env_file: '${{ vars.ENVIRONMENT }}-env'
+  env_file: 'TEST'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
